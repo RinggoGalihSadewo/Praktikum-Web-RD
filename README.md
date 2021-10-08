@@ -17,6 +17,6 @@ jangan lupa tambahkan hasil screenshoot web di dalam file
 
 ### Tambahkan identitas dasar di sini: 
 
-Nama  : Gilang Ashari Abimanyu
+Nama  :
 <br>
-NIM   : 119140040
+NIM   : 
