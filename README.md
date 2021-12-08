@@ -17,6 +17,8 @@ jangan lupa tambahkan hasil screenshoot web di dalam file
 
 ### Tambahkan identitas dasar di sini: 
 
-Nama  :
+Nama  :Agusto Hawlai Rajagukguk
 <br>
-NIM   :
+NIM   :119140119
+
+Membuat file css terpisah pada home dan index, serta membuat button logout pada home
