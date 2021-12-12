@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum3</title>
+
+</head>
+<body>
+    <label for="theme">Select Theme : </label>
+    <select name="theme" id="theme" onchange="getTheme()">
+        <option value="putih">White</option>
+        <option value="hitam">Black</option>
+    </select>
+    <br>
+    <h1>Welcome To My Website</h1>
+    <p><b>Ester Efritira - 118140086</b> </p>
+    <br>
+    <label for="artis">Artis favorite : </label>
+    <select name="artis" id="artis" onchange="getArtis()">
+        <option value="">Pilih Artis</option>
+        <option value="OOR">One Ok Rock</option>
+        <option value="Slipknot">Slipknot</option>
+        <option value="Asking">Asking Alexandria</option>
+        <option value="SWS">Sleeping With Sirens</option>
+    </select>
+
+    <p id="demo"></p>
+
+    <label for="faktorial">Input Number: </label>
+    <input type="text" id="faktorial" name="faktorial">
+    <button type="submit" id="faktorial" onclick="getFaktorial()">Get Factorial</button>
+
+    <p id="demo2"></p>
+
+    <script>
+
+        function getTheme(){
+            var theme = document.getElementById("theme").value;
+            if(theme == "putih"){
+                document.body.style.backgroundColor = "white";
+                document.body.style.color = "black";
+            }else if(theme == "hitam"){
+                document.body.style.backgroundColor = "black";
+                document.body.style.color = "white";
+            }  
+        }
+
+        function getArtis(){
+            var artis = document.getElementById("artis").value;
+            if(artis == "OOR"){
+                document.getElementById("demo").innerHTML = "ONE OK ROCK adalah band rock Jepang yang dibentuk tahun 2005 di Tokyo";
+            }else if(artis == "Slipknot"){
+                document.getElementById("demo").innerHTML = "Slipknot adalah sebuah band beraliran Nu Metal dari Des Moines, Iowa yang dibentuk pada bulan September 1995.";
+            }else if(artis == "Asking"){
+                document.getElementById("demo").innerHTML = "Asking Alexandria adalah band metalcore Inggris dari York, North Yorkshire. Didirikan pada 2008.";
+            }else if(artis == "SWS"){
+                document.getElementById("demo").innerHTML = "Sleeping with Sirens adalah sebuah band post-hardcore dari Orlando, Florida Amerika. Band ini dibentuk pada tahun 2009";
+            }else{
+                document.getElementById("demo").innerHTML = "";
+            }
+        }
+
+        function getFaktorial(){
+            var angka = document.getElementById("faktorial").value;
+            var hasil = 1;
+            var bil = 0;
+            for (bil = angka; bil >= 1; bil--){
+                hasil = hasil * bil;
+            }
+            document.getElementById("demo2").innerHTML = hasil;
+        }
+
+    </script>
+
+</body>
+</html>
